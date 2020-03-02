@@ -3,20 +3,12 @@ extends layout
 block content
 
   h1 #{siteName}!
+
+  //- h1 EP Scraper
   
-  h3 Categories
+  h3 #{courseTitle}
+  h4 #{dayTitle}
   ul
-    each val in categories
+    each val in content
       li= val
-  h3 Positions
-  ul
-    each val in positions
-      li= val
-  h3 Locations
-  ul
-    each val in locations
-      li= val
-  h3 Tags
-  ul
-    each val in tags
-      li= val
+  
